@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <title>Калькулятор</title>
+	 <style>
+	 	.as{
+ 
+ border-style: solid;
+ border-color: black;
+ border-width: 1px;
+
+ }
+</style>
+</head>
+<body>
+	  <H1 ALIGN=CENTER><I><big>Калькулятор</H1></I>
+	  <H4 ALIGN=LEFT>Чугай Єлизавета</H4>	
+  <table class="as" >
+    <div>
+   <tr>
+    <td>
+        <ol>
+            <form name="formcalc1">
+     	<input type ="text" name ="txtnum1"> +
+     	<input type ="text" name ="txtnum2"> =
+     	<input type ="text" name ="txtres"> 
+   
+        <input type ="button" value ="Розрахувати" onClick="sumValues()"> 
+	</form>
+
+	<script type="text/javascript">
+
+
+		function sumValues()
+		{
+			var num1,num1,res;
+			num1=Number(document.formcalc1.txtnum1.value);
+			num2=Number(document.formcalc1.txtnum2.value);
+			res=num1+num2;
+			document.formcalc1.txtres.value=res;
+		}
+	</script>
+
+
+	<form name="formcalc2">
+     	<input type ="text" name ="txtnum1"> -
+     	<input type ="text" name ="txtnum2"> =
+     	<input type ="text" name ="txtres"> 
+        <input type ="button" value ="Розрахувати" onClick="minValues()"> 
+	</form>
+	<script type="text/javascript">
+
+		function minValues()
+		{
+			var num1,num1,res;
+			num1=Number(document.formcalc2.txtnum1.value);
+			num2=Number(document.formcalc2.txtnum2.value);
+			res=num1-num2;
+			document.formcalc2.txtres.value=res;
+		}
+	</script>
+
+
+      <form name="formcalc3">
+     	<input type ="text" name ="txtnum1"> *
+     	<input type ="text" name ="txtnum2"> =
+     	<input type ="text" name ="txtres"> 
+        <input type ="button" value ="Розрахувати" onClick="multiplicationValues()"> 
+	</form>
+	<script type="text/javascript">
+
+		function multiplicationValues()
+		{
+			var num1,num1,res;
+			num1=Number(document.formcalc3.txtnum1.value);
+			num2=Number(document.formcalc3.txtnum2.value);
+			res=num1*num2;
+			document.formcalc3.txtres.value=res;
+		}
+	</script>
+
+	<form name="formcalc4">
+     	<input type ="text" name ="txtnum1"> /
+     	<input type ="text" name ="txtnum2"> =
+     	<input type ="text" name ="txtres"> 
+        <input type ="button" value ="Розрахувати" onClick="divisionValues()"> 
+	</form>
+	<script type="text/javascript">
+
+		function divisionValues()
+		{
+			var num1,num1,res;
+			num1=Number(document.formcalc4.txtnum1.value);
+			num2=Number(document.formcalc4.txtnum2.value);
+			res=num1/num2;
+			document.formcalc4.txtres.value=res;
+		}
+	</script>
+
+	<form name="formcalc5">
+     	<input type ="text" name ="txtnum1"> ^
+     	<input type ="text" name ="txtnum2"> =
+     	<input type ="text" name ="txtres"> 
+        <input type ="button" value ="Розрахувати" onClick="degreeValues()"> 
+	</form>
+	<script type="text/javascript">
+
+		function degreeValues()
+		{
+			var num1,num1,res;
+			num1=Number(document.formcalc5.txtnum1.value);
+			num2=Number(document.formcalc5.txtnum2.value);
+			res=Math.pow(num1,num2);
+			document.formcalc5.txtres.value=res;
+		}
+	</script>
+</ol>
+    </td>
+ 
+
+</body>
+</html>	 
